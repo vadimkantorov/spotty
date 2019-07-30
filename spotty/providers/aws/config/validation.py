@@ -73,7 +73,7 @@ def is_gpu_instance(instance_type: str):
 
 
 def is_nitro_instance(instance_type):
-    return instance_type in [
+    return False and instance_type in [
         'c5.large', 'c5.xlarge', 'c5.2xlarge', 'c5.4xlarge', 'c5.9xlarge', 'c5.18xlarge',
         'c5d.large', 'c5d.xlarge', 'c5d.2xlarge', 'c5d.4xlarge', 'c5d.9xlarge', 'c5d.18xlarge',
         'm5.large', 'm5.xlarge', 'm5.2xlarge', 'm5.4xlarge', 'm5.12xlarge', 'm5.24xlarge',
